@@ -50,6 +50,12 @@ devDependencies:
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
+  unocss-preset-chinese:
+    specifier: ^0.2.0
+    version: 0.2.0(@unocss/nuxt@0.55.3)
+  unocss-preset-ease:
+    specifier: ^0.0.3
+    version: 0.0.3(@unocss/nuxt@0.55.3)
   vue-tsc:
     specifier: ^1.8.8
     version: 1.8.8(typescript@5.2.2)
@@ -10396,6 +10402,35 @@ packages:
   /universalify@2.0.0:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
+    dev: true
+
+  /unocss-preset-chinese@0.2.0(@unocss/nuxt@0.55.3):
+    resolution: {integrity: sha512-l+6qv95sqYganzjG25bTv6JCtcHho+bH/YfER7FweSGqzR4IZawbR1orZg9FH5V+jp+BBOiJPGNXzoaEygnwow==}
+    peerDependencies:
+      '@unocss/nuxt': '*'
+      unocss: '*'
+    peerDependenciesMeta:
+      '@unocss/nuxt':
+        optional: true
+      unocss:
+        optional: true
+    dependencies:
+      '@unocss/core': 0.55.3
+      '@unocss/nuxt': 0.55.3(postcss@8.4.28)(rollup@2.79.1)(vite@4.4.9)(webpack@5.88.2)
+    dev: true
+
+  /unocss-preset-ease@0.0.3(@unocss/nuxt@0.55.3):
+    resolution: {integrity: sha512-xSJcLZWeEBmeElddjLgKTY/NHP1ycwxSfSW6ldCG2OWPfa4vNNrRl0eL+kuMWNWzewCKGeQS/XIYI66mmd0R0Q==}
+    peerDependencies:
+      '@unocss/nuxt': '*'
+      unocss: '*'
+    peerDependenciesMeta:
+      '@unocss/nuxt':
+        optional: true
+      unocss:
+        optional: true
+    dependencies:
+      '@unocss/nuxt': 0.55.3(postcss@8.4.28)(rollup@2.79.1)(vite@4.4.9)(webpack@5.88.2)
     dev: true
 
   /unocss@0.55.3(@unocss/webpack@0.55.3)(postcss@8.4.28)(rollup@2.79.1)(vite@4.4.9):
