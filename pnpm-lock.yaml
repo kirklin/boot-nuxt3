@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@kirklin/reset-css':
+    specifier: ^0.0.3
+    version: 0.0.3
+
 devDependencies:
   '@iconify-json/carbon':
     specifier: ^1.1.20
@@ -2290,6 +2295,10 @@ packages:
       - supports-color
       - typescript
     dev: true
+
+  /@kirklin/reset-css@0.0.3:
+    resolution: {integrity: sha512-EUfxCc0U8iIn4hwhtsOha6uYKul839pyol4Yt5FJtLT8BH/F9MLMkik6KkKHhvInk8nVu4flSsFBGn/OZuu74g==}
+    dev: false
 
   /@kwsites/file-exists@1.1.1:
     resolution: {integrity: sha512-m9/5YGR18lIwxSFDwfE3oA7bWuq9kdau6ugN4H2rJeyhFQZcG9AgSHkQtSD15a8WvTgfz9aikZMrKPHvbpqFiw==}

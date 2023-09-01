@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   },
 
   css: [
-    "@unocss/reset/tailwind.css",
+    "@kirklin/reset-css/kirklin.css",
   ],
 
   colorMode: {
