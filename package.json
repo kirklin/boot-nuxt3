@@ -15,15 +15,28 @@
     "start:generate": "npx serve .output/public"
   },
   "dependencies": {
-    "@kirklin/reset-css": "^0.0.3"
+    "@kirklin/reset-css": "^0.0.3",
+    "@vueuse/components": "^10.7.2",
+    "@vueuse/core": "^10.7.2",
+    "colord": "^2.9.3",
+    "dayjs": "^1.11.10",
+    "lodash": "^4.17.21",
+    "mitt": "^3.0.1",
+    "naive-ui": "^2.37.3",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1"
   },
   "devDependencies": {
+    "@css-render/vue3-ssr": "^0.15.12",
     "@iconify-json/carbon": "^1.1.29",
     "@iconify-json/twemoji": "^1.1.15",
     "@kirklin/eslint-config": "^2.1.0",
     "@nuxt/devtools": "^1.0.8",
     "@nuxtjs/color-mode": "^3.3.2",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
     "@pinia/nuxt": "^0.5.1",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.11.16",
     "@unocss/eslint-config": "^0.58.5",
     "@unocss/nuxt": "^0.58.5",
     "@vite-pwa/nuxt": "^0.4.0",
@@ -31,7 +44,6 @@
     "consola": "^3.2.3",
     "eslint": "^8.56.0",
     "nuxt": "^3.10.1",
-    "pinia": "^2.1.7",
     "typescript": "^5.3.3",
     "unocss-preset-chinese": "^0.3.2",
     "unocss-preset-ease": "^0.0.3",
