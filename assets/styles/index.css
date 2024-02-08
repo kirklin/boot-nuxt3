@@ -1,0 +1,7 @@
+@import "naive-override.css";
+@import "mark.css";
+@import "transition.css";
+
+html {
+  scrollbar-gutter: auto;
+}

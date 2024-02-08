@@ -1,4 +1,7 @@
-import { pwa } from "./config/pwa";
+import AutoImport from "unplugin-auto-import/vite";
+import Components from "unplugin-vue-components/vite";
+import { NaiveUiResolver } from "unplugin-vue-components/resolvers";
+import { pwa } from "./setting/pwa";
 import { appDescription } from "./constants/index";
 import { pagesExtend } from "./pages-extend";
 import { pagesGenerateExclude } from "./pages-exclude";
@@ -8,6 +11,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@unocss/nuxt",
     "@pinia/nuxt",
+    "@nuxtjs/i18n",
     "@pinia-plugin-persistedstate/nuxt",
     "@nuxtjs/color-mode",
     "@vite-pwa/nuxt",
@@ -33,6 +37,21 @@ export default defineNuxtConfig({
           ? ["naive-ui", "vueuc", "date-fns-tz/formatInTimeZone"]
           : [],
     },
+    plugins: [
+      AutoImport({
+        imports: [
+          {
+            "naive-ui": ["useDialog", "useMessage", "useNotification", "useLoadingBar"],
+          },
+        ],
+      }),
+      Components({
+        resolvers: [NaiveUiResolver()],
+      }),
+    ],
+  },
+  i18n: {
+    vueI18n: "./i18n.config.ts",
   },
   css: [
     "@kirklin/reset-css/kirklin.css",

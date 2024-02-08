@@ -8,10 +8,12 @@ import {
   NNotificationProvider,
 } from "naive-ui";
 import GlobalListener from "~/layouts/GlobalListener.vue";
+
+const { configProviderProps } = useNaiveUIConfigProvider();
 </script>
 
 <template>
-  <NConfigProvider>
+  <NConfigProvider class="h-full w-full" v-bind="configProviderProps">
     <NLoadingBarProvider :container-style="{ height: '3px' }">
       <NMessageProvider>
         <NNotificationProvider>

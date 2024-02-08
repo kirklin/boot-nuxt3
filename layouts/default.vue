@@ -1,24 +1,37 @@
 <script setup lang="ts">
+import Footer from "./footer/index.vue";
+import Header from "./header/index.vue";
+import Content from "./content/index.vue";
+import SidebarLayout from "~/layouts/sidebar/index.vue";
 import Provider from "~/layouts/Provider.vue";
-import MainContainer from "~/layouts/MainContainer.vue";
+
+defineOptions({
+  name: "Layout",
+});
 </script>
 
 <template>
   <Provider>
-    <main class="layout flex font-chinese">
-      <MainContainer class="grow">
-        <slot />
-      </MainContainer>
-    </main>
+    <NEl tag="div" class="flex flex-row flex-1 h-full w-full">
+      <div>
+        <SidebarLayout />
+      </div>
+      <div class="flex flex-col flex-1 h-full w-full">
+        <header class="">
+          <Header />
+        </header>
+        <div class="block flex-1 h-full overflow-x-hidden rounded-2xl pl-0 pr-5 pt-0 pb-6">
+          <div class="min-h-full h-full w-full rounded-2xl common-bg p-4">
+            <Content />
+          </div>
+        </div>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
+    </NEl>
   </Provider>
 </template>
 
 <style scoped>
-.layout {
-  width: 100vw;
-  height: 100vh;
-  height: 100svh;
-  overflow: hidden;
-  perspective: 1000px;
-}
 </style>

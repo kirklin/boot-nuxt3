@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { appName } from "~/constants";
+import "~/assets/styles/index.css";
 
 useHead({
   title: appName,
@@ -8,9 +9,12 @@ useHead({
 
 <template>
   <VitePwaManifest />
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <!--  TODO: fix ssr -->
+  <ClientOnly>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </ClientOnly>
 </template>
 
 <style>
