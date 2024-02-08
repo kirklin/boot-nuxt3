@@ -1,6 +1,6 @@
 {
   "name": "boot-nuxt3",
-  "private": true,
+  "type": "module",
   "packageManager": "pnpm@8.15.1",
   "scripts": {
     "build": "nuxi build",
